@@ -46,14 +46,26 @@
 1736 : ru : ПередКонвертациейОбъекта (глобальный)
 1736 : vi : BeforeObjectConversion (toàn cục)
 1736 : ro : BeforeObjectConversion (la nivel mondial)
-1935 : en = In the values conversion rule (VCR) you should match Source value to Receiver value.1936 : If there is no receiver appropriate value, specify an empty value.; ru = В правиле конвертации значений (ПКЗ) необходимо сопоставить значение Источника значению Приемника.1937 : Если подходящего значения приемника нет, то указать пустое значение.;1938 : vi = Trong các quy tắc chuyển đổi giá trị (QT3) cần so sánh giá trị Nguồn với giá trị Đích.1939 : Nếu không có giá trị đích thích hợp, thì chỉ ra giá trị trống.;1940 : ro = În regula de conversie a valorilor (VCR) trebuie să se potrivească valoarea Sursă cu valoarea Receiver.1941 : Dacă nu există nicio valoare adecvată pentru receptor, specificați o valoare goală.");
+1935 : 1936: en : In the values conversion rule (VCR) you should match Source value to Receiver value.If there is no receiver appropriate value, specify an empty value.
+1936: 1937: 1938: ru : В правиле конвертации значений (ПКЗ) необходимо сопоставить значение Источника значению Приемника.Если подходящего значения приемника нет, то указать пустое значение.
+1938: 1939: 1940: vi : Trong các quy tắc chuyển đổi giá trị (QT3) cần so sánh giá trị Nguồn với giá trị Đích.Nếu không có giá trị đích thích hợp, thì chỉ ra giá trị trống.
+1940: 1941: ro : În regula de conversie a valorilor (VCR) trebuie să se potrivească valoarea Sursă cu valoarea Receiver.Dacă nu există nicio valoare adecvată pentru receptor, specificați o valoare goală.")
 3350 : en : EXTERNAL CONNECTION: %1
 3350 : ru : ВНЕШНЕЕ СОЕДИНЕНИЕ: %1
 3350 : vi : KẾT NỐI NGOÀI: %1
 3350 : ro : CONEXIUNEA EXTERNĂ: %1
-3379 : en = An error occurred while opening file for exchange message writing.3380 : File name %1.3381 : Error description: %2;3382 : ru = Ошибка при открытии файла для записи сообщения обмена.3383 : Имя файла %1.3384 : Описание ошибки: %2;3385 : vi = Lỗi khi mở tệp để ghi lại thông báo trao đổi.3386 : Tên tệp %1.3387 : Mô tả lỗi: %2;3388 : ro = A apărut o eroare la deschiderea fișierului pentru scrierea mesajului de schimb.3389 : Numele fișierului %1.3390 : Descrierea erorii: %2"),
-3494 : en = An error occurred when attempting to write to data protocol file: %1. Error description: %2; ru = Ошибка при попытке записи в файл протокола данных: %1. Описание ошибки: %2;vi = Lỗi khi thử ghi ra tệp giao thức dữ liệu: %1. Mô tả lỗi: %2;ro = A apărut o eroare la încercarea de scriere în fișierul protocolului de date: %1. Descrierea erorii: %2
-5437 : en = Version of exchange rules storing format does not correspond to the expected one.5438 : Rules of exchange are required to be imported again.; ru = Версия формата хранения правил обмена не соответствует ожидаемой.5439 : Требуется выполнить загрузку правил обмена повторно.;5440 : vi = Phiên bản định dạng lưu quy tắc trao đổi không như phiên bản dự tính.5441 : Cần thực hiện kết nhập lại quy tắc trao đổi.;5442 : ro = Versiunea formularului de stocare a regulilor de schimb nu corespunde celei așteptate.5443 : Regulile de schimb trebuie să fie importate din nou."
+3379 : 3380: 3381: 3382: en : An error occurred while opening file for exchange message writing.File name %1.Error description: %2
+3382: 3383: 3384: 3385: ru : Ошибка при открытии файла для записи сообщения обмена.Имя файла %1.Описание ошибки: %2
+3385: 3386: 3387: 3388: vi : Lỗi khi mở tệp để ghi lại thông báo trao đổi.Tên tệp %1.Mô tả lỗi: %2
+3388: 3389: 3390: ro : A apărut o eroare la deschiderea fișierului pentru scrierea mesajului de schimb.Numele fișierului %1.Descrierea erorii: %2
+3494 : en : An error occurred when attempting to write to data protocol file: %1. Error description: %2
+3494 : ru : Ошибка при попытке записи в файл протокола данных: %1. Описание ошибки: %2
+3494 : vi : Lỗi khi thử ghi ra tệp giao thức dữ liệu: %1. Mô tả lỗi: %2
+3494 : ro : A apărut o eroare la încercarea de scriere în fișierul protocolului de date: %1. Descrierea erorii: %2
+5437 : 5438: en : Version of exchange rules storing format does not correspond to the expected one.Rules of exchange are required to be imported again.
+5438: 5439: 5440: ru : Версия формата хранения правил обмена не соответствует ожидаемой.Требуется выполнить загрузку правил обмена повторно.
+5440: 5441: 5442: vi : Phiên bản định dạng lưu quy tắc trao đổi không như phiên bản dự tính.Cần thực hiện kết nhập lại quy tắc trao đổi.
+5442: 5443: ro : Versiunea formularului de stocare a regulilor de schimb nu corespunde celei așteptate.Regulile de schimb trebuie să fie importate din nou.
 5828 : en : Error in exchange message format.
 5828 : ru : Ошибка формата сообщения обмена.
 5828 : vi : Lỗi định dạng thông báo trao đổi.
@@ -117,7 +129,10 @@
 5976 : ru : Блокировка получения данных не может быть установлена в активной транзакции.
 5976 : vi : Không thể khóa việc nhận dữ liệu ở giao tác hiện hoạt.
 5976 : ro : Blocarea primirii datelor nu poate fi setată într-o tranzacție activă.
-5984 : en = Setting lock on data exchange error.5985 : Data exchange may be performed by another session.5987 : Details: %1;5988 : ru = Ошибка установки блокировки на обмен данными.5989 : Возможно, обмен данными выполняется другим сеансом.5991 : Подробности: %1;5992 : vi = Lỗi cài đặt phong tỏa trao đổi dữ liệu.5993 : Có thể, việc trao đổi dữ liệu được thực hiện bởi phiên làm việc khác.5995 : Chi tiết:%1;5996 : ro = Setarea blocării erorilor de schimb de date.5997 : Schimbul de date poate fi efectuat printr-o altă sesiune.5999 : Detalii: %1"),
+5984 : 5985: 5987: 5988: en : Setting lock on data exchange error.Data exchange may be performed by another session.Details: %1
+5988: 5989: 5991: 5992: ru : Ошибка установки блокировки на обмен данными.Возможно, обмен данными выполняется другим сеансом.Подробности: %1
+5992: 5993: 5995: 5996: vi : Lỗi cài đặt phong tỏa trao đổi dữ liệu.Có thể, việc trao đổi dữ liệu được thực hiện bởi phiên làm việc khác.Chi tiết:%1
+5996: 5997: 5999: ro : Setarea blocării erorilor de schimb de date.Schimbul de date poate fi efectuat printr-o altă sesiune.Detalii: %1
 6024 : en : AfterDataImport (conversion)
 6024 : ru : ПослеЗагрузкиДанных (конвертация)
 6024 : vi : AfterDataImport (chuyển đổi)
@@ -174,7 +189,10 @@
 9579 : ru : Ошибка при записи документа: %1. Описание ошибки: %2
 9579 : vi : Lỗi khi ghi chứng từ: %1. Mô tả lỗi: %2
 9579 : ro : A apărut o eroare la scrierea documentului: %1 Descrierea erorii: %2
-9977 : en = An error occurred while creating temporary file for the data import.9978 : File name ""%1"".9979 : Error9980 : description: %2; ru = Ошибка при создании временного файла для выгрузки данных.9981 : Имя файла ""%1"".9982 : Описание9983 : ошибки: %2;9984 : vi = Lỗi khi tạo tệp tạm thời để kết nhập dữ liệu9985 : Tên tệp""%1"".9986 : Mô tả9987 : lỗi: %2;9988 : ro = A apărut o eroare la crearea fișierului temporar pentru importul de date.9989 : Numărul fișierului ""%1""9991 : erorii: %2"),
+9977 : 9978: 9979: 9980: en : An error occurred while creating temporary file for the data import.File name ""%1"".Errordescription: %2
+9980: 9981: 9982: 9983: 9984: ru : Ошибка при создании временного файла для выгрузки данных.Имя файла ""%1"".Описаниеошибки: %2
+9984: 9985: 9986: 9987: 9988: vi : Lỗi khi tạo tệp tạm thời để kết nhập dữ liệuTên tệp""%1"".Mô tảlỗi: %2
+9988: 9989: 9991: ro : A apărut o eroare la crearea fișierului temporar pentru importul de date.Numărul fișierului ""%1""erorii: %2
 11489 : en : ObjectExport: %1
 11489 : ru : ВыгрузкаОбъекта: %1
 11489 : vi : ObjectExport: %1
@@ -195,7 +213,10 @@
 12105 : ru : ПередОтправкойИнформацииОбУдалении (конвертация)
 12105 : vi : BeforeSendingInformationAboutDeletion (chuyển đổi)
 12105 : ro : ÎnainteaTrimiteriiInformațiilorDespreȘtergere (conversie)
-12275 : en = Data exchange.Conversion rule import; ru = Обмен данными.Загрузка правил конвертации;vi = Trao đổi dữ liệu.Kết nhập quy tắc chuyển đổi;ro = Schimb de date.Import de reguli de conversie
+12275 : en : Data exchange.Conversion rule import
+12275 : ru : Обмен данными.Загрузка правил конвертации
+12275 : vi : Trao đổi dữ liệu.Kết nhập quy tắc chuyển đổi
+12275 : ro : Schimb de date.Import de reguli de conversie
 12329 : en : Object type is undefined: %1
 12329 : ru : Тип объекта не определен: %1
 12329 : vi : Chưa xác định kiểu đối tượng: %1
@@ -560,7 +581,10 @@
 15873 : ru : Ошибка в обработчике события ПослеВыгрузкиОбъектаВФайл
 15873 : vi : Lỗi trong hàm sự kiện AfterObjectExportToFile
 15873 : ro : A apărut o eroare în handler-ul evenimentului AfterObjectExportToFile
-15875 : en = Error of the predefined item property setting.15876 : You can not mark the predefined item to be deleted. Mark for deletion for the objects is not installed.; ru = Ошибка установки свойства предопределенного элемента.15877 : Нельзя помечать на удаление предопределенный элемент. Пометка на удаление для объекта не установлена.;15878 : vi = Lỗi thiết lập thuộc tính của phần tử định trước.15879 : Không nên đánh dấu xóa phần tử định trước. Việc đánh dấu xóa cho đối tượng không được thiết lập.;15880 : ro = Eroare la setarea elementului proprietății predefinite.15881 : Nu puteți marca elementul predefinit pentru ștergere. Marcarea pentru ștergere obiecte nu este instalată."));
+15875 : 15876: en : Error of the predefined item property setting.You can not mark the predefined item to be deleted. Mark for deletion for the objects is not installed.
+15876: 15877: 15878: ru : Ошибка установки свойства предопределенного элемента.Нельзя помечать на удаление предопределенный элемент. Пометка на удаление для объекта не установлена.
+15878: 15879: 15880: vi : Lỗi thiết lập thuộc tính của phần tử định trước.Không nên đánh dấu xóa phần tử định trước. Việc đánh dấu xóa cho đối tượng không được thiết lập.
+15880: 15881: ro : Eroare la setarea elementului proprietății predefinite.Nu puteți marca elementul predefinit pentru ștergere. Marcarea pentru ștergere obiecte nu este instalată."))
 15883 : en : An error occurred while accessing the object tabular section. The object tabular section cannot be changed.
 15883 : ru : Ошибка обращения к табличной части объекта. Табличная часть объекта не может быть изменена.
 15883 : vi : Lỗi truy cập đến phần bảng đối tượng. Không thể thay đổi phần bảng đối tượng.

@@ -1,6 +1,5 @@
 import java.io.*;
 import java.net.URL;
-import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -17,7 +16,8 @@ public class Home {
             String line = reader.readLine(); //Текущая строка
             int num = 1; //Номер строки
 
-            String tempLine = ""; //переменная для неполных строк
+            String tempLine = ""; //переменная строки для неполных строк
+            String tempNum = ""; //переменная номера строки для неполных строк
             String patternR;    //Регулярное выражение
             String delimeter;  //Разделитель
 
@@ -30,13 +30,27 @@ public class Home {
 
                     if(tempLine!=""){
 
-                        patternR = "(?m)\"([^\"]*)";
-                        delimeter = "';";
-                        String[] arrayLine1 = main.lineToArray(tempLine, patternR, delimeter);
+                        delimeter = ";";
+                        tempLine = tempLine.replace("/n", "").replace("'", "").replaceAll("\"\\)?,?\\)?$", "");
 
-                        tempLine = tempLine.replace("/n", "").replace("'", "");
-                        output.write(tempLine + System.lineSeparator());
+                        String[] arrayLine = tempLine.split(delimeter);
+                        String[] arrayNum  = tempNum.split(delimeter);
+
+                        int index = 0;
+                        for (String lineArray:
+                             arrayLine) {
+                            if(arrayNum.length == 1){
+                                output.write(arrayNum[0]+lineArray.trim().replace("=", ":")+ System.lineSeparator());
+                            }else{
+                                output.write(arrayNum[index]+lineArray.trim().replace("=", ":")+ System.lineSeparator());
+                            }
+
+                        index++;
+                        }
+
+                        //output.write(tempLine + System.lineSeparator());
                         tempLine = "";
+                        tempNum  = "";
                     }
                     patternR = "\"(.*?)\"\\)";
                     delimeter = "';";
@@ -68,20 +82,23 @@ public class Home {
                             Matcher matcherPartLine = patternPardLine.matcher(line);
 
                             if (matcherPartLine.find()) {
-
-                                tempLine = num + " : "+tempLine + matcherPartLine.group(1).trim();
-
+                                tempNum = tempNum + num + " : ";
+                                tempLine = tempLine + matcherPartLine.group(1).trim();
                             }
                         }
-
                     }
                 } else if (line.matches(".*\\| ?\\b.*?") == true && line.matches("^((?!SELECT|FROM|IN|WHERE).)*$") == true) { //Поиск строки с | и исключаем строки запроса
 
                     line = line.replace("|", "");
-                    tempLine = tempLine + num + " : "+line.trim();
-
+                    if (line.matches(".*?(\\bru\\b|\\bro\\b|\\ben\\b|\\bvi\\b).*") == true) { //поиск в строке ключевых строк
+                        tempNum  = tempNum + num+": ;"+ num+": ";
+                        tempLine = tempLine +line.trim();
+                    } else {
+                        tempNum  = tempNum + num+": ";
+                        tempLine = tempLine +line.trim();
+                    }
                 }
-                num = num + 1;
+                num++;
                 line = reader.readLine();
             }
 
